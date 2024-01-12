@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E1E6F6;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+.icon1 {width: 4rem;}
+/* Header Code */
+header {
+  color: #E83BF6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 20vw;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a img {
+  margin-right: 5px;
+}
+
+nav a {
+  color: #E83BF6;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover {
+  color: #4DA6BA;
+}
+
+.menu-icon {
+ display: flex;
+ height: 50px;
+}
+
+.hero-header {
+  font-size: 5vw;
+  color: #4DA6BA;
+  -webkit-text-stroke: 1px black;
+  margin-left: 10px;
+  
+}
+.hero-sub {
+  margin-top: 0.5rem;
+  margin-bottom:0.5rem;
+  font-weight:bolder;
+  font-size: 3vw;
+  color: #E83BF6;
+  margin-left: 10px;
+  
+}
+
+p {
+
+  font-size: 1rem;
+  color: #6C6B8A;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.supp-icon {
+
+  height:1.5rem;
+
+}
+.hero {
+  border: 1px solid black;
+}
+/* Hero Section Code */
+.hero-section {
+  position: relative;
+  height: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  max-width: 900px; 
+  z-index: 1; /* Place the content on top of the image */
+  margin-top: 40px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  color: #E83BF6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px,  #E83BF6;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-top: 1px solid #E83BF6; 
+}
+
+.dropdown-content a {
+  color: #E83BF6;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+ .dropdown-content a:hover {
+  background-color: #E1E6F6;
+  color: #4DA6BA;
+} 
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #4DA6BA;
+
+}
+
+.filled-button {
+  border: none;
+  background-color: #E83BF6;
+  color: white;
+  width: 25vh;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 2vh;
+}
+
+.transparent-button {
+ border: #E83BF6 1px solid;
+  color: #E83BF6;
+  width: 25vh;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 2vh;
+
+}
+
+.hero-navigation {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  border:1px solid #E1E6F6;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:  1.4vw;
+  margin-right:  1.4vw;
+  color: #E83BF6;
+  
+ 
+}
+
+.hero-navigation a {
+  color: #E83BF6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  -webkit-text-stroke:1px,  #E83BF6;
+
+
+}
+
+.hero-navigation .menu-icon {
+  margin-right: auto;
+  cursor: pointer;
+  order: -1; /* Move the hamburger icon to the left */
+}
+
+.hero-navigation .menu-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Allow the middle items to take up remaining space */
+}
+
+
+.header-icon {
+  display: none;
+}
+
+.hero-navigation .support {
+  position: absolute;
+  display: flex;
+  top: auto;
+  left: 90%; /* Push the support to the right */
+  margin-right: 2.8vh;
+  font-weight: bold;
+  -webkit-text-stroke:1px,  #E83BF6;
+}
+.hero-navigation .supp-icon {
+
+  display: inline-block;
+}
+
+.hero-navigation .menu-items a {
+  margin: 0 10px;
+}
+
+.hero-navigation .menu-items a:hover {
+ color: #4DA6BA;
+}
+.hero-navigation .support a:hover{
+
+color: #4DA6BA;
+}
+
+.hero-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+.login-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 40px;
+  
+}
+.h1{
+
+color: #4DA6BA;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form h1 {
+  color: #4DA6BA;
+  margin-bottom: 10px;
+}
+
+.login-form h2 {
+  color: cadetblue;
+}
+
+.existing-account {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.existing-account a {
+  color:#E83BF6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.existing-account a:hover {
+  text-decoration: underline;
+}
+
+form {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  color:#E83BF6;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #E83BF6;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.or-login-with {
+  color: #666;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-buttons button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.social-buttons button img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-navigation {
+    display: none; /* Hide for mobile */}
+  }
